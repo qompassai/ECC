@@ -9,12 +9,14 @@ track of upstream affaan-m/ECC merges (HEAD at clone time: 4eb71d92).
 - Install: `npm ci --ignore-scripts` (matches upstream CI) — completed.
 - Validators: `npm run test:validators` — exit 0 (catalog + command
   registry checks up to date).
-- JS tests: `node tests/run-all.js` — 348 test files; runner aggregate
-  6976 passed / 9 failed / 164 skipped, exit 1. File-level truth: exactly
-  ONE failing file, `tests/hooks/pre-bash-commit-quality.test.js`, with
-  exactly ONE failing case ("handles hash-prefixed python comments and
-  string false-positives"); the runner's aggregate failed-count (9) does
-  not reconcile with the two failure lines in its own log.
+- JS tests: `node tests/run-all.js` — exit 1; the runner's Final Results
+  box reads: Total Tests 7305, Passed 7304, Failed 1; Files 347 passed,
+  1 failed. The single failing file is
+  `tests/hooks/pre-bash-commit-quality.test.js`, with exactly ONE failing
+  case ("handles hash-prefixed python comments and string false-positives").
+  (An earlier draft of this note cited an intermediate sub-summary —
+  6976/9/164 — captured mid-run; the final tally above supersedes it and
+  reconciles exactly with the one failed file and case.)
 - Python tests: `python3 -m pytest tests/ -q` in a uv venv with the
   project's declared deps installed (anthropic, pyyaml, pytest-asyncio)
   — 285 passed, 3 skipped, 75 subtests passed, exit 0. With primo's
