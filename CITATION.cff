@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "ECC (fork of affaan-m/ECC)"
+authors:
+  - family-names: Porter
+    given-names: Matthew A.
+    orcid: "https://orcid.org/0000-0002-0302-4812"
+    affiliation: "Qompass AI"
+version: "v2026-10-17"
+date-released: 2026-10-17
+license: Apache-2.0
+repository-code: "https://github.com/qompassai/ECC"
+abstract: "Fork of affaan-m/ECC (https://github.com/affaan-m/ECC), held in the Qompass AI GitHub estate. Authorship of the underlying work belongs to the upstream project. Repository description: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
