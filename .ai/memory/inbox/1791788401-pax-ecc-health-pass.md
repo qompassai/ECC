@@ -34,7 +34,7 @@ pylint, so the leg is skipped there and the test passes. The hook's
 "pylint if available, nonzero blocks" behavior is upstream's design;
 weakening it or editing the fixture would rewrite upstream behavior, so
 this pass records the failure as environment-sensitive and changes
-nothing. If Matt wants the local suite fully green, the lever is a
+nothing. If Owner wants the local suite fully green, the lever is a
 pylint-free PATH for the test run, not a code change.
 
 ## SCIP
@@ -49,7 +49,7 @@ subdir alone would misrepresent coverage, so no index.scip was placed.
 
 This .ai/memory/ tree was seeded this pass mirroring diver's layout
 (INDEX.md, current.md, decisions.md, patterns.md, inbox/, archive/).
-The repo becomes visible to Matt's memory indexer by having .ai/memory/
+The repo becomes visible to Owner's memory indexer by having .ai/memory/
 present in the checkout; the indexing mechanism itself is inventoried
 separately in the 2026-10-11 overnight campaign record.
 
